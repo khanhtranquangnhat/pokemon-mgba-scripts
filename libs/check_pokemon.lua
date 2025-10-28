@@ -42,6 +42,20 @@ function bit.bxor(a, b)
     return result
 end
 
+function bit.bor(a, b)
+    local result = 0
+    local bitval = 1
+    while a > 0 or b > 0 do
+        if (a % 2 == 1) or (b % 2 == 1) then
+            result = result + bitval
+        end
+        bitval = bitval * 2
+        a = math.floor(a / 2)
+        b = math.floor(b / 2)
+    end
+    return result
+end
+
 function bit.rshift(a, b)
     return math.floor(a / (2 ^ b))
 end
@@ -58,6 +72,7 @@ local MEMORY = {
     
     PERSONALITY = 0x00,
     OT_ID = 0x04,
+    S_ID= 0x06,
     DATA_START = 0x20,
     STATUS = 0x50,
     LEVEL = 0x54,
@@ -252,6 +267,14 @@ end
 -- KIỂM TRA POKEMON
 -- ============================================================================
 
+function is_shiny(pid, tid, sid)
+    local val = bit.bxor(bit.bxor(bit.band(pid, 0xFFFF), bit.rshift(pid, 16)), tid, sid)
+    return val < 8
+end
+
+
+local ot_id, t_id, s_id = nil
+
 function pokemon_check.check_pokemon_at(base_address, source)
     local personality = get_personality(base_address)
     
@@ -260,9 +283,21 @@ function pokemon_check.check_pokemon_at(base_address, source)
         return false, nil
     end
     
-    local ot_id = get_ot_id(base_address)
+    if ot_id == nil then
+        ot_id = get_ot_id(base_address)
+        t_id = bit.band(ot_id, 0xFFFF)
+        s_id = bit.rshift(ot_id, 16)
+
+        console:log("🎯 Fetched OT ID and Trainer ID from memory:")
+        console:log("   ✅ Fetched OT ID: " .. ot_id)
+        console:log("   ✅ Trainer ID: " .. t_id .. ", Secret ID: " .. s_id)
+    else
+        console:log("   ✅ Using cached OT ID: " .. ot_id .. " (TID: " .. t_id .. ", SID: " .. s_id .. ")")
+    end
+
+    local is_shiny = is_shiny(personality, t_id, s_id)
     local s = get_stats(base_address)
-    
+
     if s.level == 0 or s.hp == 0 then
         console:log("   ❌ Stats not loaded yet (Level or HP = 0)")
         return false, nil
@@ -287,6 +322,9 @@ function pokemon_check.check_pokemon_at(base_address, source)
         source = source,
         personality = personality,
         ot_id = ot_id,
+        p_id = p_id,
+        s_id = s_id,
+        is_shiny = is_shiny,
         nature = nature,
         stats = s,
         growth = g,
@@ -554,6 +592,12 @@ function pokemon_check.full_info(report)
     gSpecies4C = string.format("%04d", tonumber(g.species))
     local nature_name = report.nature or "Unknown"
     local natureData = get_nature_stats_by_name(nature_name)
+    local is_shiny = report.is_shiny or false
+
+    -- console:log("report p_id: " .. tostring(report.p_id) .. " ot_id: " .. tostring(report.ot_id) .. " s_id: " .. tostring(report.s_id))
+    -- console:log("TID: " .. tostring(tid) .. " SID: " .. tostring(sid))
+
+    console:log("TID should be: 36858")
 
     local ev_yield = get_yield_by_species_id(gSpecies4C) or {}
     local ev_value = {}
@@ -703,7 +747,11 @@ function pokemon_check.print_report(report)
 
     console:log("🕹️✨ 𝙿𝚘𝚔𝚎𝚖𝚘𝚗 Information ✨🕹️")
 
-    console:log(string.format("Name : %s", report.name))
+    if (report.is_shiny) then
+        console:log(string.format("Name : %s", report.name) .. " 💫💖💖 Shiny! 💖💖💫")
+    else 
+        console:log(string.format("Name : %s", report.name))
+    end
     console:log(string.format("Nature: %s is: %s", report.nature, report.nature_summary))
     console:log(string.format("Held Item: %s", report.item))
     console:log(string.format("Level: %d", report.level))
