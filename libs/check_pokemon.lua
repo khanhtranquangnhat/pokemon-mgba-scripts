@@ -701,7 +701,7 @@ function pokemon_check.print_report(report)
     
     local report = pokemon_check.full_info(report)
 
-    console:log("🕹️✨ 𝙿𝚘𝚔𝚎𝚖𝚘𝚗 𝙸𝚗𝚏𝚘 ✨🕹️")
+    console:log("🕹️✨ 𝙿𝚘𝚔𝚎𝚖𝚘𝚗 Information ✨🕹️")
 
     console:log(string.format("Name : %s", report.name))
     console:log(string.format("Nature: %s is: %s", report.nature, report.nature_summary))
