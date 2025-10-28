@@ -1,5 +1,4 @@
 /config
 /debug.lua
-/gift_hunter.lua
+/dev_*.lua
 /logs
-/xxx.js
