@@ -4,6 +4,10 @@
 
 ## Overview
 
+![Screenshot](screenshot.png)
+
+![Screenshot 2](screenshot2.png)
+
 These scripts are designed for mGBA emulator and only read information from the game. They do not modify, affect, or hack the game in any way.
 
 ## Supported Scripts
