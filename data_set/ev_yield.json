@@ -1,0 +1,5059 @@
+[
+  {
+    "id": "0001",
+    "name": "Bulbasaur",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0002",
+    "name": "Ivysaur",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0003",
+    "name": "Venusaur",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0004",
+    "name": "Charmander",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0005",
+    "name": "Charmeleon",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 2
+  },
+  {
+    "id": "0006",
+    "name": "Charizard",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0007",
+    "name": "Squirtle",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0008",
+    "name": "Wartortle",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0009",
+    "name": "Blastoise",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 3,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0010",
+    "name": "Caterpie",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0011",
+    "name": "Metapod",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0012",
+    "name": "Butterfree",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0013",
+    "name": "Weedle",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0014",
+    "name": "Kakuna",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0015",
+    "name": "Beedrill",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0016",
+    "name": "Pidgey",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0017",
+    "name": "Pidgeotto",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0018",
+    "name": "Pidgeot",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 3
+    },
+    "value": 3
+  },
+  {
+    "id": "0019",
+    "name": "Rattata",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0020",
+    "name": "Raticate",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0021",
+    "name": "Spearow",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0022",
+    "name": "Fearow",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0023",
+    "name": "Ekans",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0024",
+    "name": "Arbok",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0025",
+    "name": "Pikachu",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0026",
+    "name": "Raichu",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 3
+    },
+    "value": 3
+  },
+  {
+    "id": "0027",
+    "name": "Sandshrew",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0028",
+    "name": "Sandslash",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0029",
+    "name": "Nidoran♀",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0030",
+    "name": "Nidorina",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0031",
+    "name": "Nidoqueen",
+    "ev": {
+      "hp": 3,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0032",
+    "name": "Nidoran♂",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0033",
+    "name": "Nidorino",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0034",
+    "name": "Nidoking",
+    "ev": {
+      "hp": 0,
+      "atk": 3,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0035",
+    "name": "Clefairy",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0036",
+    "name": "Clefable",
+    "ev": {
+      "hp": 3,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0037",
+    "name": "Vulpix",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0038",
+    "name": "Ninetales",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 1
+    },
+    "value": 2
+  },
+  {
+    "id": "0039",
+    "name": "Jigglypuff",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0040",
+    "name": "Wigglytuff",
+    "ev": {
+      "hp": 3,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0041",
+    "name": "Zubat",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0042",
+    "name": "Golbat",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0043",
+    "name": "Oddish",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0044",
+    "name": "Gloom",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0045",
+    "name": "Vileplume",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0046",
+    "name": "Paras",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0047",
+    "name": "Parasect",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0048",
+    "name": "Venonat",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0049",
+    "name": "Venomoth",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 2
+  },
+  {
+    "id": "0050",
+    "name": "Diglett",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0051",
+    "name": "Dugtrio",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0052",
+    "name": "Meowth",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0053",
+    "name": "Persian",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0054",
+    "name": "Psyduck",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0055",
+    "name": "Golduck",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0056",
+    "name": "Mankey",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0057",
+    "name": "Primeape",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0058",
+    "name": "Growlithe",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0059",
+    "name": "Arcanine",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0060",
+    "name": "Poliwag",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0061",
+    "name": "Poliwhirl",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0062",
+    "name": "Poliwrath",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 3,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0063",
+    "name": "Abra",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0064",
+    "name": "Kadabra",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0065",
+    "name": "Alakazam",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0066",
+    "name": "Machop",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0067",
+    "name": "Machoke",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0068",
+    "name": "Machamp",
+    "ev": {
+      "hp": 0,
+      "atk": 3,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0069",
+    "name": "Bellsprout",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0070",
+    "name": "Weepinbell",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0071",
+    "name": "Victreebel",
+    "ev": {
+      "hp": 0,
+      "atk": 3,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0072",
+    "name": "Tentacool",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0073",
+    "name": "Tentacruel",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0074",
+    "name": "Geodude",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0075",
+    "name": "Graveler",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0076",
+    "name": "Golem",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 3,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0077",
+    "name": "Ponyta",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0078",
+    "name": "Rapidash",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0079",
+    "name": "Slowpoke",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0080",
+    "name": "Slowbro",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0081",
+    "name": "Magnemite",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0082",
+    "name": "Magneton",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0083",
+    "name": "Farfetch'd",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0084",
+    "name": "Doduo",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0085",
+    "name": "Dodrio",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0086",
+    "name": "Seel",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0087",
+    "name": "Dewgong",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0088",
+    "name": "Grimer",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0089",
+    "name": "Muk",
+    "ev": {
+      "hp": 1,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0090",
+    "name": "Shellder",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0091",
+    "name": "Cloyster",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0092",
+    "name": "Gastly",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0093",
+    "name": "Haunter",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0094",
+    "name": "Gengar",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0095",
+    "name": "Onix",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0096",
+    "name": "Drowzee",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0097",
+    "name": "Hypno",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0098",
+    "name": "Krabby",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0099",
+    "name": "Kingler",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0100",
+    "name": "Voltorb",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0101",
+    "name": "Electrode",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0102",
+    "name": "Exeggcute",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0103",
+    "name": "Exeggutor",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0104",
+    "name": "Cubone",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0105",
+    "name": "Marowak",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0106",
+    "name": "Hitmonlee",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0107",
+    "name": "Hitmonchan",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0108",
+    "name": "Lickitung",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0109",
+    "name": "Koffing",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0110",
+    "name": "Weezing",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0111",
+    "name": "Rhyhorn",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0112",
+    "name": "Rhydon",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0113",
+    "name": "Chansey",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0114",
+    "name": "Tangela",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0115",
+    "name": "Kangaskhan",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0116",
+    "name": "Horsea",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0117",
+    "name": "Seadra",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0118",
+    "name": "Goldeen",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0119",
+    "name": "Seaking",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0120",
+    "name": "Staryu",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0121",
+    "name": "Starmie",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0122",
+    "name": "Mr. Mime",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0123",
+    "name": "Scyther",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0124",
+    "name": "Jynx",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0125",
+    "name": "Electabuzz",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0126",
+    "name": "Magmar",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0127",
+    "name": "Pinsir",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0128",
+    "name": "Tauros",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 2
+  },
+  {
+    "id": "0129",
+    "name": "Magikarp",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0130",
+    "name": "Gyarados",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0131",
+    "name": "Lapras",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0132",
+    "name": "Ditto",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0133",
+    "name": "Eevee",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0134",
+    "name": "Vaporeon",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0135",
+    "name": "Jolteon",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0136",
+    "name": "Flareon",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0137",
+    "name": "Porygon",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0138",
+    "name": "Omanyte",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0139",
+    "name": "Omastar",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0140",
+    "name": "Kabuto",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0141",
+    "name": "Kabutops",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0142",
+    "name": "Aerodactyl",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0143",
+    "name": "Snorlax",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0144",
+    "name": "Articuno",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 3,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0145",
+    "name": "Zapdos",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0146",
+    "name": "Moltres",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0147",
+    "name": "Dratini",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0148",
+    "name": "Dragonair",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0149",
+    "name": "Dragonite",
+    "ev": {
+      "hp": 0,
+      "atk": 3,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0150",
+    "name": "Mewtwo",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0151",
+    "name": "Mew",
+    "ev": {
+      "hp": 3,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0152",
+    "name": "Chikorita",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0153",
+    "name": "Bayleef",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0154",
+    "name": "Meganium",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0155",
+    "name": "Cyndaquil",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0156",
+    "name": "Quilava",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 2
+  },
+  {
+    "id": "0157",
+    "name": "Typhlosion",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0158",
+    "name": "Totodile",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0159",
+    "name": "Croconaw",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0160",
+    "name": "Feraligatr",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0161",
+    "name": "Sentret",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0162",
+    "name": "Furret",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0163",
+    "name": "Hoothoot",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0164",
+    "name": "Noctowl",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0165",
+    "name": "Ledyba",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0166",
+    "name": "Ledian",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0167",
+    "name": "Spinarak",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0168",
+    "name": "Ariados",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0169",
+    "name": "Crobat",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 3
+    },
+    "value": 3
+  },
+  {
+    "id": "0170",
+    "name": "Chinchou",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0171",
+    "name": "Lanturn",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0172",
+    "name": "Pichu",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0173",
+    "name": "Cleffa",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0174",
+    "name": "Igglybuff",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0175",
+    "name": "Togepi",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0176",
+    "name": "Togetic",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0177",
+    "name": "Natu",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0178",
+    "name": "Xatu",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 2
+  },
+  {
+    "id": "0179",
+    "name": "Mareep",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0180",
+    "name": "Flaaffy",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0181",
+    "name": "Ampharos",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0182",
+    "name": "Bellossom",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 3,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0183",
+    "name": "Marill",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0184",
+    "name": "Azumarill",
+    "ev": {
+      "hp": 3,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0185",
+    "name": "Sudowoodo",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0186",
+    "name": "Politoed",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 3,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0187",
+    "name": "Hoppip",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0188",
+    "name": "Skiploom",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0189",
+    "name": "Jumpluff",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 3
+    },
+    "value": 3
+  },
+  {
+    "id": "0190",
+    "name": "Aipom",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0191",
+    "name": "Sunkern",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0192",
+    "name": "Sunflora",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0193",
+    "name": "Yanma",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0194",
+    "name": "Wooper",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0195",
+    "name": "Quagsire",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0196",
+    "name": "Espeon",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0197",
+    "name": "Umbreon",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0198",
+    "name": "Murkrow",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0199",
+    "name": "Slowking",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 3,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0200",
+    "name": "Misdreavus",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0201",
+    "name": "Unown",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0202",
+    "name": "Wobbuffet",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0203",
+    "name": "Girafarig",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0204",
+    "name": "Pineco",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0205",
+    "name": "Forretress",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0206",
+    "name": "Dunsparce",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0207",
+    "name": "Gligar",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0208",
+    "name": "Steelix",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0209",
+    "name": "Snubbull",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0210",
+    "name": "Granbull",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0211",
+    "name": "Qwilfish",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0212",
+    "name": "Scizor",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0213",
+    "name": "Shuckle",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0214",
+    "name": "Heracross",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0215",
+    "name": "Sneasel",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0216",
+    "name": "Teddiursa",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0217",
+    "name": "Ursaring",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0218",
+    "name": "Slugma",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0219",
+    "name": "Magcargo",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0220",
+    "name": "Swinub",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0221",
+    "name": "Piloswine",
+    "ev": {
+      "hp": 1,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0222",
+    "name": "Corsola",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0223",
+    "name": "Remoraid",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0224",
+    "name": "Octillery",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0225",
+    "name": "Delibird",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0226",
+    "name": "Mantine",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0227",
+    "name": "Skarmory",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0228",
+    "name": "Houndour",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0229",
+    "name": "Houndoom",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0230",
+    "name": "Kingdra",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0231",
+    "name": "Phanpy",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0232",
+    "name": "Donphan",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0233",
+    "name": "Porygon2",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0234",
+    "name": "Stantler",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0235",
+    "name": "Smeargle",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0236",
+    "name": "Tyrogue",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0237",
+    "name": "Hitmontop",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0238",
+    "name": "Smoochum",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0239",
+    "name": "Elekid",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0240",
+    "name": "Magby",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0241",
+    "name": "Miltank",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0242",
+    "name": "Blissey",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0243",
+    "name": "Raikou",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 3
+  },
+  {
+    "id": "0244",
+    "name": "Entei",
+    "ev": {
+      "hp": 1,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0245",
+    "name": "Suicune",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0246",
+    "name": "Larvitar",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0247",
+    "name": "Pupitar",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0248",
+    "name": "Tyranitar",
+    "ev": {
+      "hp": 0,
+      "atk": 3,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0249",
+    "name": "Lugia",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 3,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0250",
+    "name": "Ho-Oh",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 3,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0251",
+    "name": "Celebi",
+    "ev": {
+      "hp": 3,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0252",
+    "name": "Treecko",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0253",
+    "name": "Grovyle",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0254",
+    "name": "Sceptile",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 3
+    },
+    "value": 3
+  },
+  {
+    "id": "0255",
+    "name": "Torchic",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0256",
+    "name": "Combusken",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0257",
+    "name": "Blaziken",
+    "ev": {
+      "hp": 0,
+      "atk": 3,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0258",
+    "name": "Mudkip",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0259",
+    "name": "Marshtomp",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0260",
+    "name": "Swampert",
+    "ev": {
+      "hp": 0,
+      "atk": 3,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0261",
+    "name": "Poochyena",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0262",
+    "name": "Mightyena",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0263",
+    "name": "Zigzagoon",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0264",
+    "name": "Linoone",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0265",
+    "name": "Wurmple",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0266",
+    "name": "Silcoon",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0267",
+    "name": "Beautifly",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0268",
+    "name": "Cascoon",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0269",
+    "name": "Dustox",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 3,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0270",
+    "name": "Lotad",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0271",
+    "name": "Lombre",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0272",
+    "name": "Ludicolo",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 3,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0273",
+    "name": "Seedot",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0274",
+    "name": "Nuzleaf",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0275",
+    "name": "Shiftry",
+    "ev": {
+      "hp": 0,
+      "atk": 3,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0276",
+    "name": "Taillow",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0277",
+    "name": "Swellow",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0278",
+    "name": "Wingull",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0279",
+    "name": "Pelipper",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0280",
+    "name": "Ralts",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0281",
+    "name": "Kirlia",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0282",
+    "name": "Gardevoir",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0283",
+    "name": "Surskit",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0284",
+    "name": "Masquerain",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0285",
+    "name": "Shroomish",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0286",
+    "name": "Breloom",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0287",
+    "name": "Slakoth",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0288",
+    "name": "Vigoroth",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0289",
+    "name": "Slaking",
+    "ev": {
+      "hp": 3,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0290",
+    "name": "Nincada",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0291",
+    "name": "Ninjask",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0292",
+    "name": "Shedinja",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0293",
+    "name": "Whismur",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0294",
+    "name": "Loudred",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0295",
+    "name": "Exploud",
+    "ev": {
+      "hp": 3,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0296",
+    "name": "Makuhita",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0297",
+    "name": "Hariyama",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0298",
+    "name": "Azurill",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0299",
+    "name": "Nosepass",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0300",
+    "name": "Skitty",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0301",
+    "name": "Delcatty",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 2
+  },
+  {
+    "id": "0302",
+    "name": "Sableye",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0303",
+    "name": "Mawile",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0304",
+    "name": "Aron",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0305",
+    "name": "Lairon",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0306",
+    "name": "Aggron",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 3,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0307",
+    "name": "Meditite",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0308",
+    "name": "Medicham",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0309",
+    "name": "Electrike",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0310",
+    "name": "Manectric",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 2
+  },
+  {
+    "id": "0311",
+    "name": "Plusle",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0312",
+    "name": "Minun",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0313",
+    "name": "Volbeat",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0314",
+    "name": "Illumise",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0315",
+    "name": "Roselia",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0316",
+    "name": "Gulpin",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0317",
+    "name": "Swalot",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0318",
+    "name": "Carvanha",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0319",
+    "name": "Sharpedo",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0320",
+    "name": "Wailmer",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0321",
+    "name": "Wailord",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0322",
+    "name": "Numel",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0323",
+    "name": "Camerupt",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0324",
+    "name": "Torkoal",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0325",
+    "name": "Spoink",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0326",
+    "name": "Grumpig",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0327",
+    "name": "Spinda",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0328",
+    "name": "Trapinch",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0329",
+    "name": "Vibrava",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 2
+  },
+  {
+    "id": "0330",
+    "name": "Flygon",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 2
+    },
+    "value": 3
+  },
+  {
+    "id": "0331",
+    "name": "Cacnea",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0332",
+    "name": "Cacturne",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0333",
+    "name": "Swablu",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0334",
+    "name": "Altaria",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0335",
+    "name": "Zangoose",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0336",
+    "name": "Seviper",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0337",
+    "name": "Lunatone",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0338",
+    "name": "Solrock",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0339",
+    "name": "Barboach",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0340",
+    "name": "Whiscash",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0341",
+    "name": "Corphish",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0342",
+    "name": "Crawdaunt",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0343",
+    "name": "Baltoy",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0344",
+    "name": "Claydol",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0345",
+    "name": "Lileep",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0346",
+    "name": "Cradily",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0347",
+    "name": "Anorith",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0348",
+    "name": "Armaldo",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0349",
+    "name": "Feebas",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0350",
+    "name": "Milotic",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0351",
+    "name": "Castform",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0352",
+    "name": "Kecleon",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0353",
+    "name": "Shuppet",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0354",
+    "name": "Banette",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0355",
+    "name": "Duskull",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0356",
+    "name": "Dusclops",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 2,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0357",
+    "name": "Tropius",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0358",
+    "name": "Chimecho",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0359",
+    "name": "Absol",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0360",
+    "name": "Wynaut",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0361",
+    "name": "Snorunt",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0362",
+    "name": "Glalie",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0363",
+    "name": "Spheal",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0364",
+    "name": "Sealeo",
+    "ev": {
+      "hp": 2,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0365",
+    "name": "Walrein",
+    "ev": {
+      "hp": 3,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0366",
+    "name": "Clamperl",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0367",
+    "name": "Huntail",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0368",
+    "name": "Gorebyss",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 2,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0369",
+    "name": "Relicanth",
+    "ev": {
+      "hp": 1,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0370",
+    "name": "Luvdisc",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 1
+  },
+  {
+    "id": "0371",
+    "name": "Bagon",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0372",
+    "name": "Shelgon",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0373",
+    "name": "Salamence",
+    "ev": {
+      "hp": 0,
+      "atk": 3,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0374",
+    "name": "Beldum",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 1,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 1
+  },
+  {
+    "id": "0375",
+    "name": "Metang",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 2
+  },
+  {
+    "id": "0376",
+    "name": "Metagross",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 3,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0377",
+    "name": "Regirock",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 3,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0378",
+    "name": "Regice",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 3,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0379",
+    "name": "Registeel",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0380",
+    "name": "Latias",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 3,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0381",
+    "name": "Latios",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0382",
+    "name": "Kyogre",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 3,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0383",
+    "name": "Groudon",
+    "ev": {
+      "hp": 0,
+      "atk": 3,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0384",
+    "name": "Rayquaza",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0385",
+    "name": "Jirachi",
+    "ev": {
+      "hp": 3,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0386",
+    "name": "DeoxysNormal Forme",
+    "ev": {
+      "hp": 0,
+      "atk": 1,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 1
+    },
+    "value": 3
+  },
+  {
+    "id": "0386",
+    "name": "DeoxysAttack Forme",
+    "ev": {
+      "hp": 0,
+      "atk": 2,
+      "def": 0,
+      "sp_atk": 1,
+      "sp_def": 0,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0386",
+    "name": "DeoxysDefense Forme",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 2,
+      "sp_atk": 0,
+      "sp_def": 1,
+      "speed": 0
+    },
+    "value": 3
+  },
+  {
+    "id": "0386",
+    "name": "DeoxysSpeed Forme",
+    "ev": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "sp_atk": 0,
+      "sp_def": 0,
+      "speed": 3
+    },
+    "value": 3
+  }
+]
