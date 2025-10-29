@@ -1,4 +1,6 @@
 /config
 /debug.lua
-/dev_*.lua
+/dev_*
 /logs
+/data_set/dev_*
+/data_set/*/dev_*
