@@ -275,14 +275,22 @@ end
 
 local ot_id, t_id, s_id = nil
 
-function pokemon_check.check_pokemon_at(base_address, source)
+function pokemon_check.check_pokemon_at(base_address, source, cached)
     local personality = get_personality(base_address)
+
+    if cached == nil then cached = false end
+    if cached ~= true then
+        ot_id = nil
+        t_id = nil
+        s_id = nil
+    end
     
     if personality == 0 then
         console:log("   ❌ Personality = 0 (Pokemon data not in memory or wrong address)")
         return false, nil
     end
-    
+
+    -- Cache OT ID, TID, SID when loop load state to get gift, egg, ...
     if ot_id == nil then
         ot_id = get_ot_id(base_address)
         t_id = bit.band(ot_id, 0xFFFF)
@@ -366,32 +374,8 @@ local function get_item_name(id)
 end
 
 ----------------------------------------------------------------------------
--- Load pokemon names from JSON
-local pokemon_file = io.open(parent_dir .. "data_set/pokemon_name.json")
-local pokemons = {}
-
-if pokemon_file then
-    local content = pokemon_file:read("*all")
-    pokemon_file:close()
-    pokemons = json.decode(content)
-else
-    console:log("Error: Could not open pokemon_name.json")
-end
-
--- Hàm lấy tên pokemon theo id
-local function get_pokemon_name(id)
-    id = string.format("%03d", id) -- chuyển về dạng 3 số, ví dụ 5 -> "005"
-    for _, pokemon in ipairs(pokemons) do
-        if pokemon.id == id then
-            return pokemon.name
-        end
-    end
-    return "Unknown"
-end
-
-----------------------------------------------------------------------------
 -- Load pokemon base stats from JSON
-local base_stats_file = io.open(parent_dir .. "data_set/base_stats_24.json")
+local base_stats_file = io.open(parent_dir .. "data_set/pokemons_info_gen3.json")
 if base_stats_file then
     local content = base_stats_file:read("*all")
     base_stats_file:close()
@@ -588,7 +572,8 @@ function pokemon_check.full_info(report)
     local e = report.evs or {}
     local m = report.misc or {}
     local level = s.level or 0
-    local name = get_pokemon_name(g.species) or "Unknown"
+    local pokemon_info = get_base_stats_by_id(g.species)
+    local name = pokemon_info.name or "Unknown"
     gSpecies4C = string.format("%04d", tonumber(g.species))
     local nature_name = report.nature or "Unknown"
     local natureData = get_nature_stats_by_name(nature_name)
@@ -625,7 +610,7 @@ function pokemon_check.full_info(report)
 
     local iv_atk = calc_iv(
         atk,
-        get_base_stats_by_id(gSpecies4C).attack,
+        pokemon_info.attack,
         atk_ev,
         level,
         natureData and natureData.attack or 1.0,
@@ -633,7 +618,7 @@ function pokemon_check.full_info(report)
     )
     local iv_def = calc_iv(
         def,
-        get_base_stats_by_id(gSpecies4C).defense,
+        pokemon_info.defense,
         def_ev,
         level,
         natureData and natureData.defense or 1.0,
@@ -641,7 +626,7 @@ function pokemon_check.full_info(report)
     )
     local iv_spatk = calc_iv(
         spatk,
-        get_base_stats_by_id(gSpecies4C).sp_attack,
+        pokemon_info.sp_attack,
         spatk_ev,
         level,
         natureData and natureData.sp_attack or 1.0,
@@ -649,7 +634,7 @@ function pokemon_check.full_info(report)
     )
     local iv_spdef = calc_iv(
         spdef,
-        get_base_stats_by_id(gSpecies4C).sp_defense,
+        pokemon_info.sp_defense,
         spdef_ev,
         level,
         natureData and natureData.sp_defense or 1.0,
@@ -657,7 +642,7 @@ function pokemon_check.full_info(report)
     )
     local iv_spd = calc_iv(
         speed,
-        get_base_stats_by_id(gSpecies4C).speed,
+        pokemon_info.speed,
         spd_ev,
         level,
         natureData and natureData.speed or 1.0,
@@ -666,7 +651,7 @@ function pokemon_check.full_info(report)
 
     local iv_hp = calc_iv(
         hp,
-        get_base_stats_by_id(gSpecies4C).hp,
+        pokemon_info.hp,
         hp_ev,
         level,
         natureData and natureData.hp or 1.0,
@@ -722,6 +707,32 @@ function pokemon_check.full_info(report)
         report.iv_rank = "No stars : " .. (math.floor(total_iv_average * 100) / 100)
     end
 
+    local pokemon_types = pokemon_info.types or {}
+    report.types = pokemon_types
+
+    -- Weaknesses, Resistances, Immunities
+    local weaknesses = pokemon_info.weak or {}
+    local super_weaknesses = pokemon_info.super_weak or {}
+    local resistances = pokemon_info.resistant or {}
+    local super_resistances = pokemon_info.super_resistant or {}
+    local immunities = pokemon_info.immune or {}
+
+    report.weaknesses = weaknesses
+    report.super_weaknesses = super_weaknesses
+    report.resistances = resistances
+    report.super_resistances = super_resistances
+    report.immunities = immunities
+
+    -- Ability effects can be added here in the future
+    -- "abilities": [
+    --   {
+    --     "name": "Overgrow",
+    --     "description": "When its health reaches one-third or less of its max HP, this Pokemon's Grass-type attacks receive a 50% boost in power."
+    --   }
+    -- ],
+    local ability_effects = pokemon_info.abilities or {}
+    report.ability_effects = ability_effects
+
     report.stats = s
     report.evs = e
     report.name = name
@@ -745,13 +756,39 @@ function pokemon_check.print_report(report)
     
     local report = pokemon_check.full_info(report)
 
-    console:log("🕹️✨ 𝙿𝚘𝚔𝚎𝚖𝚘𝚗 Information ✨🕹️")
+    console:log("🛡️💎🎯 𝙿𝚘𝚔𝚎𝚖𝚘𝚗 Information 🛡️💎🎯")
 
     if (report.is_shiny) then
         console:log(string.format("Name : %s", report.name) .. " 💫💖💖 Shiny! 💖💖💫")
     else 
         console:log(string.format("Name : %s", report.name))
     end
+    console:log("-----------------------------------")
+    -- Display Types
+    local type_list = {}
+    for _, v in pairs(report.types or {}) do
+        table.insert(type_list, v)
+    end
+    console:log("Types: " .. table.concat(type_list, ", "))
+
+    -- show weaknesses
+    console:log("Weaknesses: " .. table.concat(report.weaknesses or {}, ", "))
+    console:log("Super Weaknesses: " .. table.concat(report.super_weaknesses or {}, ", "))
+    console:log("Resistances: " .. table.concat(report.resistances or {}, ", "))
+    console:log("Super Resistances: " .. table.concat(report.super_resistances or {}, ", "))
+    console:log("Immunities with: " .. table.concat(report.immunities or {}, ", "))
+
+    console:log("-----------------------------------")
+
+    -- Display Abilities
+    console:log("Abilities:")
+    local ability_number = 1;
+    for _, ability in ipairs(report.ability_effects or {}) do
+        console:log(string.format("%d. %s: %s", ability_number, ability.name or "Unknown", ability.description or "No description"))
+        ability_number = ability_number + 1
+    end
+    console:log("-----------------------------------")
+    
     console:log(string.format("Nature: %s is: %s", report.nature, report.nature_summary))
     console:log(string.format("Held Item: %s", report.item))
     console:log(string.format("Level: %d", report.level))
@@ -761,13 +798,14 @@ function pokemon_check.print_report(report)
         report.evs.hp_ev, report.evs.atk_ev, report.evs.def_ev, report.evs.spatk_ev, report.evs.spdef_ev, report.evs.spd_ev))
     console:log(string.format("IVs: HP:%d ATK:%d DEF:%d SPATK:%d SPDEF:%d SPD:%d",
         report.ivs.hp, report.ivs.atk, report.ivs.def, report.ivs.spatk, report.ivs.spdef, report.ivs.speed))
+    console:log("-----------------------------------")        
     console:log(string.format("IV Rank: %s", report.iv_rank or "No stars"))
-    console:log(string.format("Total EV Yield: %d", report.total_ev or 0))
-    console:log("EV Yield Breakdown:")
+    console:log("-----------------------------------")
+    console:log("EV Yield:")
     for stat, value in pairs(report.ev_yield or {}) do
         console:log(string.format("  %s: %d", stat:upper(), value))
     end
-    console:log("🕹️✨ END Pokemon Information")
+    console:log("===================================")
 end
 
 return pokemon_check

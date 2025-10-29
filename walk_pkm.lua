@@ -4,7 +4,7 @@ local check_pokemon = require("libs.check_pokemon")
 -- FIRE RED MEMORY MAP
 -- ============================================================================
 local MEMORY = {
-    ENEMY_START = 0x0202402C,
+    WILD_START = 0x0202402C,
     BATTLE_MODE = 0x02022B4C,
 }
 
@@ -21,7 +21,6 @@ local function safe(v) return v or 0 end
 -- ============================================================================
 
 local prev_mode = nil
-local has_battled = false
 
 -- Init state : no battle : 4
 -- Encounter state : start battle : 0
@@ -46,10 +45,9 @@ local function detect_wild_battle()
     if prev_mode ~= mode then
         if prev_mode ~= 4 and mode == 4 then
             console:log("🎯 Wild battle detected!")
-            has_battled = true
 
             -- check wild pokemon
-            local success, report = check_pokemon.check_pokemon_at(MEMORY.ENEMY_START, "Wild")
+            local success, report = check_pokemon.check_pokemon_at(MEMORY.WILD_START, "Wild")
             if success and report then
                 check_pokemon.print_report(report)
             end
