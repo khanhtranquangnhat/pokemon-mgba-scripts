@@ -127,16 +127,6 @@ function get_nature(personality)
 end
 
 
-
-local ORDER_TABLE = {
-    {"G","A","E","M"},{"G","A","M","E"},{"G","E","A","M"},{"G","E","M","A"},
-    {"G","M","A","E"},{"G","M","E","A"},{"A","G","E","M"},{"A","G","M","E"},
-    {"A","E","G","M"},{"A","E","M","G"},{"A","M","G","E"},{"A","M","E","G"},
-    {"E","G","A","M"},{"E","G","M","A"},{"E","A","G","M"},{"E","A","M","G"},
-    {"E","M","G","A"},{"E","M","A","G"},{"M","G","A","E"},{"M","G","E","A"},
-    {"M","A","G","E"},{"M","A","E","G"},{"M","E","G","A"},{"M","E","A","G"},
-}
-
 -- ============================================================================
 -- DECRYPT SUBSTRUCTURES
 -- ============================================================================
@@ -215,6 +205,7 @@ end
 local function parse_evs(block)
     -- block[1]: hp_ev (lower 8), atk_ev (next 8), def_ev (next 8), spd_ev (next 8)
     -- block[2]: spatk_ev (lower 8), spdef_ev (next 8), rest unused
+    -- block[3]: cutesy_ev, smart_ev, tough_ev, beauty_ev 
     return {
         hp_ev = bit.band(block[1], 0xFF),
         atk_ev = bit.band(bit.rshift(block[1], 8), 0xFF),
@@ -227,8 +218,10 @@ end
 
 -- Misc block: 3 dword (12 bytes)
 local function parse_misc(block)
-    -- block[1]: IVs, Egg, Ability (full 32 bits)
-    local ivs = block[1]
+    -- block[1]: Pokérus status, location caught, level met, Poké Ball/gender.
+    -- block[2]: IVs, Egg, Ability
+    -- block[3]: Ribbons
+    local ivs = block[2]
     return {
         iv_hp = bit.band(ivs, 0x1F),
         iv_atk = bit.band(bit.rshift(ivs, 5), 0x1F),
@@ -300,7 +293,7 @@ function pokemon_check.check_pokemon_at(base_address, source, cached)
         console:log("   ✅ Fetched OT ID: " .. ot_id)
         console:log("   ✅ Trainer ID: " .. t_id .. ", Secret ID: " .. s_id)
     else
-        console:log("   ✅ Using cached OT ID: " .. ot_id .. " (TID: " .. t_id .. ", SID: " .. s_id .. ")")
+        -- console:log("   ✅ Using cached OT ID: " .. ot_id .. " (TID: " .. t_id .. ", SID: " .. s_id .. ")")
     end
 
     local is_shiny = is_shiny(personality, t_id, s_id)
@@ -426,6 +419,18 @@ local function get_nature_stats_by_name(nameInput)
 end
 
 ----------------------------------------------------------------------------
+-- Load move data from JSON
+local move_file = io.open(parent_dir .. "data_set/moves.json")
+local moves_data = {}
+if move_file then
+    local content = move_file:read("*all")
+    move_file:close()
+    moves_data = json.decode(content)
+else
+    console:log("Error: Could not open moves.json")
+end
+
+----------------------------------------------------------------------------
 -- Load yield from JSON
 local yield_file = io.open(parent_dir .. "data_set/ev_yield.json")
 
@@ -447,9 +452,9 @@ local function get_yield_by_species_id(species_id)
 end
 
 -- ============================================================================
--- IV CALCULATION
+-- IV CALCULATION REVERSE - IVs are derived from stats; results may not be exact.
 -- ============================================================================
-local function calc_iv(stat, base, ev, level, nature_mult, is_hp)
+local function calc_iv_reverse(stat, base, ev, level, nature_mult, is_hp)
     -- Nếu không truyền nature thì coi là 1.0
     nature_mult = nature_mult or 1.0
     ev = ev or 0
@@ -579,6 +584,37 @@ function pokemon_check.full_info(report)
     local natureData = get_nature_stats_by_name(nature_name)
     local is_shiny = report.is_shiny or false
 
+    local moves = {}
+    local move_count = 0
+    if a.moves and a.pp then
+        for i = 1, 4 do
+            local move_id = a.moves[i]
+            local move_pp = a.pp[i]
+            if move_id and move_id > 0 then
+                move_count = move_count + 1
+                local move_name = "Move " .. tostring(move_id)
+                if moves_data then
+                    for _, mv in ipairs(moves_data) do
+                        if mv.id == string.format("%03d", move_id) or mv.id == move_id then
+                            move_name = mv.name
+                            break
+                        end
+                    end
+                elseif pokemon_info.moves then
+                    for _, mv in ipairs(pokemon_info.moves) do
+                        if mv.id == string.format("%03d", move_id) or mv.id == move_id then
+                            move_name = mv.name
+                            break
+                        end
+                    end
+                end
+                table.insert(moves, { name = move_name, pp = move_pp })
+            end
+        end
+    end
+    report.moves = moves
+    report.move_count = move_count
+
     -- console:log("report p_id: " .. tostring(report.p_id) .. " ot_id: " .. tostring(report.ot_id) .. " s_id: " .. tostring(report.s_id))
     -- console:log("TID: " .. tostring(tid) .. " SID: " .. tostring(sid))
 
@@ -608,55 +644,13 @@ function pokemon_check.full_info(report)
     local spdef_ev = e.spdef_ev or 0
     local spd_ev = e.spd_ev or 0
 
-    local iv_atk = calc_iv(
-        atk,
-        pokemon_info.attack,
-        atk_ev,
-        level,
-        natureData and natureData.attack or 1.0,
-        false
-    )
-    local iv_def = calc_iv(
-        def,
-        pokemon_info.defense,
-        def_ev,
-        level,
-        natureData and natureData.defense or 1.0,
-        false
-    )
-    local iv_spatk = calc_iv(
-        spatk,
-        pokemon_info.sp_attack,
-        spatk_ev,
-        level,
-        natureData and natureData.sp_attack or 1.0,
-        false
-    )
-    local iv_spdef = calc_iv(
-        spdef,
-        pokemon_info.sp_defense,
-        spdef_ev,
-        level,
-        natureData and natureData.sp_defense or 1.0,
-        false
-    )
-    local iv_spd = calc_iv(
-        speed,
-        pokemon_info.speed,
-        spd_ev,
-        level,
-        natureData and natureData.speed or 1.0,
-        false
-    )
+    local iv_hp = m.iv_hp or 0
+    local iv_atk = m.iv_atk or 0
+    local iv_def = m.iv_def or 0
+    local iv_spatk = m.iv_spatk or 0
+    local iv_spdef = m.iv_spdef or 0
+    local iv_spd = m.iv_spd or 0
 
-    local iv_hp = calc_iv(
-        hp,
-        pokemon_info.hp,
-        hp_ev,
-        level,
-        natureData and natureData.hp or 1.0,
-        true
-    )
     local nature_summary = natureData and natureData.summary or ""
 
     local total_iv_value = 0
@@ -752,60 +746,65 @@ function pokemon_check.full_info(report)
     return report
 end
 
-function pokemon_check.print_report(report)
-    
+function pokemon_check.print_report(report, buffer, opts)
     local report = pokemon_check.full_info(report)
-
-    console:log("🛡️💎🎯 𝙿𝚘𝚔𝚎𝚖𝚘𝚗 Information 🛡️💎🎯")
-
-    if (report.is_shiny) then
-        console:log(string.format("Name : %s", report.name) .. " 💫💖💖 Shiny! 💖💖💫")
-    else 
-        console:log(string.format("Name : %s", report.name))
+    opts = opts or {}
+    local show_moves = opts.show_moves == true -- mặc định false
+    local show_evs_ivs = opts.show_evs_ivs ~= false -- mặc định true
+    if buffer and type(buffer.clear) == "function" and type(buffer.print) == "function" then
+        buffer:print("🛡️💎🎯 𝙿𝚘𝚔𝚎𝚖𝚘𝚗 Information 🛡️💎🎯\n")
+        if (report.is_shiny) then
+            buffer:print(string.format("Name : %s", report.name) .. " 💫💖💖 Shiny! 💖💖💫\n")
+        else 
+            buffer:print(string.format("Name : %s\n", report.name))
+        end
+        buffer:print("-----------------------------------\n")
+        local type_list = {}
+        for _, v in pairs(report.types or {}) do
+            table.insert(type_list, v)
+        end
+        buffer:print("Types: " .. table.concat(type_list, ", ") .. "\n")
+        buffer:print("Weaknesses: " .. table.concat(report.weaknesses or {}, ", ") .. "\n")
+        buffer:print("Super Weaknesses: " .. table.concat(report.super_weaknesses or {}, ", ") .. "\n")
+        buffer:print("Resistances: " .. table.concat(report.resistances or {}, ", ") .. "\n")
+        buffer:print("Super Resistances: " .. table.concat(report.super_resistances or {}, ", ") .. "\n")
+        buffer:print("Immunities with: " .. table.concat(report.immunities or {}, ", ") .. "\n")
+        buffer:print("-----------------------------------\n")
+        buffer:print("Abilities:\n")
+        local ability_number = 1;
+        for _, ability in ipairs(report.ability_effects or {}) do
+            buffer:print(string.format("%d. %s: %s\n", ability_number, ability.name or "Unknown", ability.description or "No description"))
+            ability_number = ability_number + 1
+        end
+        buffer:print("-----------------------------------\n")
+        buffer:print(string.format("Nature: %s is: %s\n", report.nature, report.nature_summary))
+        buffer:print(string.format("Held Item: %s\n", report.item))
+        buffer:print(string.format("Level: %d\n", report.level))
+        buffer:print(string.format("Stats: HP:%d ATK:%d DEF:%d SPATK:%d SPDEF:%d SPD:%d\n",
+                report.stats.hp, report.stats.atk, report.stats.def, report.stats.spatk, report.stats.spdef, report.stats.speed))
+        if show_evs_ivs then
+            
+            buffer:print("-----------------------------------\n")  
+            buffer:print(string.format("EVs: HP:%d ATK:%d DEF:%d SPATK:%d SPDEF:%d SPD:%d\n",
+                report.evs.hp_ev, report.evs.atk_ev, report.evs.def_ev, report.evs.spatk_ev, report.evs.spdef_ev, report.evs.spd_ev))
+            buffer:print(string.format("IVs: HP:%d ATK:%d DEF:%d SPATK:%d SPDEF:%d SPD:%d\n",
+                report.ivs.hp, report.ivs.atk, report.ivs.def, report.ivs.spatk, report.ivs.spdef, report.ivs.speed))      
+            buffer:print(string.format("IV Rank: %s\n", report.iv_rank or "No stars"))
+        end
+        buffer:print("-----------------------------------\n")
+        buffer:print("EV Yield:\n")
+        for stat, value in pairs(report.ev_yield or {}) do
+            buffer:print(string.format("  %s: %d\n", stat:upper(), value))
+        end
+        if show_moves and report.moves then
+            buffer:print("-----------------------------------\n")
+            buffer:print("Moves:\n")
+            for i, move in ipairs(report.moves) do
+                buffer:print(string.format("%d. %s (PP: %d)\n", i, move.name, move.pp or 0))
+            end
+        end
+        buffer:print("===================================\n")
     end
-    console:log("-----------------------------------")
-    -- Display Types
-    local type_list = {}
-    for _, v in pairs(report.types or {}) do
-        table.insert(type_list, v)
-    end
-    console:log("Types: " .. table.concat(type_list, ", "))
-
-    -- show weaknesses
-    console:log("Weaknesses: " .. table.concat(report.weaknesses or {}, ", "))
-    console:log("Super Weaknesses: " .. table.concat(report.super_weaknesses or {}, ", "))
-    console:log("Resistances: " .. table.concat(report.resistances or {}, ", "))
-    console:log("Super Resistances: " .. table.concat(report.super_resistances or {}, ", "))
-    console:log("Immunities with: " .. table.concat(report.immunities or {}, ", "))
-
-    console:log("-----------------------------------")
-
-    -- Display Abilities
-    console:log("Abilities:")
-    local ability_number = 1;
-    for _, ability in ipairs(report.ability_effects or {}) do
-        console:log(string.format("%d. %s: %s", ability_number, ability.name or "Unknown", ability.description or "No description"))
-        ability_number = ability_number + 1
-    end
-    console:log("-----------------------------------")
-    
-    console:log(string.format("Nature: %s is: %s", report.nature, report.nature_summary))
-    console:log(string.format("Held Item: %s", report.item))
-    console:log(string.format("Level: %d", report.level))
-    console:log(string.format("Stats: HP:%d ATK:%d DEF:%d SPATK:%d SPDEF:%d SPD:%d",
-        report.stats.hp, report.stats.atk, report.stats.def, report.stats.spatk, report.stats.spdef, report.stats.speed))
-    console:log(string.format("EVs: HP:%d ATK:%d DEF:%d SPATK:%d SPDEF:%d SPD:%d",
-        report.evs.hp_ev, report.evs.atk_ev, report.evs.def_ev, report.evs.spatk_ev, report.evs.spdef_ev, report.evs.spd_ev))
-    console:log(string.format("IVs: HP:%d ATK:%d DEF:%d SPATK:%d SPDEF:%d SPD:%d",
-        report.ivs.hp, report.ivs.atk, report.ivs.def, report.ivs.spatk, report.ivs.spdef, report.ivs.speed))
-    console:log("-----------------------------------")        
-    console:log(string.format("IV Rank: %s", report.iv_rank or "No stars"))
-    console:log("-----------------------------------")
-    console:log("EV Yield:")
-    for stat, value in pairs(report.ev_yield or {}) do
-        console:log(string.format("  %s: %d", stat:upper(), value))
-    end
-    console:log("===================================")
 end
 
 return pokemon_check
