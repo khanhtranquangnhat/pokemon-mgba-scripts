@@ -54,7 +54,7 @@ local function detect_wild_battle()
             local hash = ""
             local reports = {}
             -- for i = 1, 6 do
-                local success, report = check_pokemon.check_pokemon_at(MEMORY.WILD_START, "Wild")
+                local success, report = check_pokemon.check_pokemon_at(MEMORY.WILD_START, "Wild", { show_moves = true })
                 if success and report then
                     hash = hash .. (json.encode(report) or "")
                     table.insert(reports, report)
