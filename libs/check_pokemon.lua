@@ -285,9 +285,11 @@ function pokemon_check.check_pokemon_at(base_address, source, cached)
 
     -- Cache OT ID, TID, SID when loop load state to get gift, egg, ...
     if ot_id == nil then
-        ot_id = get_ot_id(base_address)
-        t_id = bit.band(ot_id, 0xFFFF)
-        s_id = bit.rshift(ot_id, 16)
+        ot_id = get_ot_id(base_address) -- read32
+        -- t_id = bit.band(ot_id, 0xFFFF)
+        -- s_id = bit.rshift(ot_id, 16)
+        t_id = bit.rshift(ot_id, 16)
+        s_id = bit.band(ot_id, 0xFFFF)
 
         console:log("🎯 Fetched OT ID and Trainer ID from memory:")
         console:log("   ✅ Fetched OT ID: " .. ot_id)
