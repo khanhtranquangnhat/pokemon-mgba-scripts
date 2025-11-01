@@ -13,6 +13,7 @@ local MEMORY = {
     WILD_START = 0x0202402C,
     BATTLE_MODE = 0x02022B4C,
     ENEMY_START = 0x202402C,
+    OPPONENT_PARTY_COUNT = 0x0202402A, -- 0x020244EA
 }
 
 -- ============================================================================
@@ -86,7 +87,9 @@ local function detect_trainer_battle()
 
         local hash = ""
         local reports = {}
-        for i = 1, 6 do
+        local opponent_party_count = read_byte(MEMORY.OPPONENT_PARTY_COUNT) or 6
+        console:log("Opponent party count: " .. tostring(opponent_party_count))
+        for i = 1, opponent_party_count do
             local base_address = MEMORY.ENEMY_START + (i - 1) * 100
             local success, report = check_pokemon.check_pokemon_at(base_address, "Trainer")
             if success and report then
@@ -107,6 +110,38 @@ local function detect_trainer_battle()
     end
 end
 
+local prev_safari_mode = nil
+local prev_safari_hash = nil
+local function detect_safari_battle()
+    local mode = emu:read8(MEMORY.BATTLE_MODE)
+    if prev_safari_mode == nil then
+        prev_safari_mode = mode
+        return
+    end
+    if prev_safari_mode ~= mode then
+        if prev_safari_mode ~= 128 and mode == 128 then
+            local hash = ""
+            local reports = {}
+            -- console:log("[Safari] mode value: " .. tostring(mode))
+            -- console:log("[Safari] prev mode value: " .. tostring(prev_safari_mode))
+            local success, report = check_pokemon.check_pokemon_at(MEMORY.WILD_START, "Safari", { show_moves = true })
+            if success and report then
+                hash = hash .. (json.encode(report) or "")
+                table.insert(reports, report)
+            end
+            if prev_safari_hash ~= hash then
+                walk_buffer:clear()
+                walk_buffer:print("🎯 Safari battle detected!\n")
+                for _, report in ipairs(reports) do
+                    check_pokemon.print_report(report, walk_buffer)
+                end
+                prev_safari_hash = hash
+            end
+        end
+    end
+    prev_safari_mode = mode
+end
+
 
 -- ============================================================================
 -- MAIN LOOP 
@@ -114,3 +149,4 @@ end
 walk_buffer:print("Start detecting wild Pokémon and trainer battles...\n")
 callbacks:add("frame", detect_wild_battle)
 callbacks:add("frame", detect_trainer_battle)
+callbacks:add("frame", detect_safari_battle)
