@@ -5,16 +5,7 @@ walk_buffer:setSize(65, 200)
 
 local prev_wild_hash = nil
 local prev_trainer_hash = nil
-
--- ============================================================================
--- FIRE RED MEMORY MAP
--- ============================================================================
-local MEMORY = {
-    WILD_START = 0x0202402C,
-    BATTLE_MODE = 0x02022B4C,
-    ENEMY_START = 0x202402C,
-    OPPONENT_PARTY_COUNT = 0x0202402A, -- 0x020244EA
-}
+local MEMORY = nil
 
 -- ============================================================================
 -- BASIC MEMORY READERS
@@ -55,7 +46,7 @@ local function detect_wild_battle()
             local hash = ""
             local reports = {}
             -- for i = 1, 6 do
-                local success, report = check_pokemon.check_pokemon_at(MEMORY.WILD_START, "Wild", { show_moves = true })
+                local success, report = check_pokemon.check_pokemon_at(MEMORY.ENEMY_START, "Wild", { show_moves = true })
                 if success and report then
                     hash = hash .. (json.encode(report) or "")
                     table.insert(reports, report)
@@ -127,7 +118,7 @@ local function detect_safari_battle()
             local reports = {}
             -- console:log("[Safari] mode value: " .. tostring(mode))
             -- console:log("[Safari] prev mode value: " .. tostring(prev_safari_mode))
-            local success, report = check_pokemon.check_pokemon_at(MEMORY.WILD_START, "Safari", { show_moves = true })
+            local success, report = check_pokemon.check_pokemon_at(MEMORY.ENEMY_START, "Safari", { show_moves = true })
             if success and report then
                 hash = hash .. (json.encode(report) or "")
                 table.insert(reports, report)
@@ -149,7 +140,17 @@ end
 -- ============================================================================
 -- MAIN LOOP 
 -- ============================================================================
-walk_buffer:print("Start detecting wild Pokémon and trainer battles...\n")
-callbacks:add("frame", detect_wild_battle)
-callbacks:add("frame", detect_trainer_battle)
-callbacks:add("frame", detect_safari_battle)
+local function run(memory_table)
+    MEMORY = memory_table
+    walk_buffer:print("Start detecting wild Pokémon and trainer battles...\n")
+    callbacks:add("frame", detect_wild_battle)
+    callbacks:add("frame", detect_trainer_battle)
+    callbacks:add("frame", detect_safari_battle)
+end
+
+return {
+    run = run,
+    detect_wild_battle = detect_wild_battle,
+    detect_trainer_battle = detect_trainer_battle,
+    detect_safari_battle = detect_safari_battle
+}

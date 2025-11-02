@@ -1,9 +1,6 @@
 local json = require("libs.json")
 local check_pokemon = require("libs.check_pokemon")
-local MEMORY = {
-    PARTY_COUNT = 0x02024029,
-    PARTY_START = 0x02024284,
-}
+local MEMORY = nil
 
 local party_buffer = console:createBuffer("Party Info")
 party_buffer:setSize(65, 500)
@@ -11,7 +8,8 @@ party_buffer:setSize(65, 500)
 local prev_party_hash = nil
 local frame_counter = 0
 
-function main_check()
+local function main_check()
+    if not MEMORY then return end
     local current_party_count = read_byte(MEMORY.PARTY_COUNT)
     local hash = ""
     local reports = {}
@@ -32,12 +30,19 @@ function main_check()
     end
 end
 
-function periodic_callback()
+local function periodic_callback()
     frame_counter = frame_counter + 1
     if frame_counter >= 200 then
         main_check()
         frame_counter = 0
     end
+end 
+
+local function run(memory_table)
+    MEMORY = memory_table
 end
 
-callbacks:add("frame", periodic_callback)
+return {
+    run = run,
+    periodic_callback = periodic_callback
+}
