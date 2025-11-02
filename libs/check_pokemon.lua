@@ -507,7 +507,9 @@ end
 -- ============================================================================
 
 function is_shiny(pid, tid, sid)
-    local val = bit.bxor(bit.bxor(bit.band(pid, 0xFFFF), bit.rshift(pid, 16)), tid, sid)
+    local low_pid = bit.band(pid, 0xFFFF)
+    local high_pid = bit.rshift(pid, 16)
+    local val = bit.bxor(bit.bxor(sid, tid), bit.bxor(low_pid, high_pid))
     return val < 8
 end
 
@@ -525,9 +527,11 @@ function pokemon_check.check_pokemon_at(base_address, source, cached)
         s_id = nil
     end
 
-    if personality == 0 and max_console_frames < 5 then
-        console:log("   ❌ Personality = 0 (Pokemon data not in memory or wrong address)")
-        max_console_frames = max_console_frames + 1
+    if personality == 0 then
+        if max_console_frames < 5 then
+            console:log("   ❌ Personality = 0 (Pokemon data not in memory or wrong address)")
+            max_console_frames = max_console_frames + 1
+        end
         return false, nil
     end
 
@@ -536,8 +540,6 @@ function pokemon_check.check_pokemon_at(base_address, source, cached)
         ot_id = get_ot_id(base_address) -- read32
         t_id = bit.band(ot_id, 0xFFFF)
         s_id = bit.rshift(ot_id, 16)
-        -- t_id = bit.rshift(ot_id, 16)
-        -- s_id = bit.band(ot_id, 0xFFFF)
 
         console:log("🎯 Fetched OT ID and Trainer ID from memory:")
         console:log("   ✅ Fetched OT ID: " .. ot_id)
@@ -550,8 +552,16 @@ function pokemon_check.check_pokemon_at(base_address, source, cached)
 
     local decrypted = decrypt_substructures(base_address)
     if not decrypted then
-        console:log("❌ Failed to decrypt enemy Pokémon.")
-        return
+        if max_console_frames < 5 then
+            console:log("   ❌ Failed to decrypt enemy Pokémon.")
+            max_console_frames = max_console_frames + 1
+        end
+        return false, nil
+    end
+
+    if decrypted["G"] == nil or decrypted["A"] == nil or decrypted["E"] == nil or decrypted["M"] == nil then
+        console:log("   ❌ Decrypted substructures are incomplete.")
+        return false, nil
     end
 
     local g = parse_growth(decrypted["G"])

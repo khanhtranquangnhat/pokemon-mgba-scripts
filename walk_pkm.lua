@@ -87,8 +87,11 @@ local function detect_trainer_battle()
 
         local hash = ""
         local reports = {}
-        local opponent_party_count = read_byte(MEMORY.OPPONENT_PARTY_COUNT) or 6
-        console:log("Opponent party count: " .. tostring(opponent_party_count))
+        local opponent_party_count = 6
+        if read_byte(MEMORY.OPPONENT_PARTY_COUNT) > 0 then
+            opponent_party_count = read_byte(MEMORY.OPPONENT_PARTY_COUNT)
+        end
+        -- console:log("Opponent party count: " .. tostring(opponent_party_count))
         for i = 1, opponent_party_count do
             local base_address = MEMORY.ENEMY_START + (i - 1) * 100
             local success, report = check_pokemon.check_pokemon_at(base_address, "Trainer")
