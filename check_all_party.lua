@@ -2,7 +2,7 @@ local json = require("libs.json")
 local check_pokemon = require("libs.check_pokemon")
 local MEMORY = nil
 
-local party_buffer = console:createBuffer("Party Info")
+local party_buffer = console:createBuffer("Party")
 party_buffer:setSize(65, 500)
 
 local prev_party_hash = nil

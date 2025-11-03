@@ -1,6 +1,6 @@
 local check_pokemon = require("libs.check_pokemon")
 local json = require("libs.json")
-local walk_buffer = console:createBuffer("Competitor Info")
+local walk_buffer = console:createBuffer("Competitor")
 walk_buffer:setSize(65, 200)
 
 local prev_wild_hash = nil
