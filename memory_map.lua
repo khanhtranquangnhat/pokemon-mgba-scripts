@@ -6,6 +6,9 @@ return {
             PARTY_START = 0x02024190,
             ENEMY_START = 0x02023F8C,
             BATTLE_MODE = 0x02022B4C,
+            BATTLE_WILD_FLAG = 4,
+            BATTLE_TRAINER_FLAG = 8,
+            BATTLE_SAFARI_FLAG = 128,
             OPPONENT_PARTY_COUNT = 0x02023C3C,
         },
         EUR_USA = {
@@ -13,6 +16,9 @@ return {
             PARTY_START = 0x02024284,
             ENEMY_START = 0x0202402C,
             BATTLE_MODE = 0x02022B4C,
+            BATTLE_WILD_FLAG = 4,
+            BATTLE_TRAINER_FLAG = 8,
+            BATTLE_SAFARI_FLAG = 128,
             OPPONENT_PARTY_COUNT = 0x02023C3C,
         }
     },
@@ -22,6 +28,9 @@ return {
             PARTY_START = 0x03004290,
             ENEMY_START = 0x030044F0,
             BATTLE_MODE = 0x02023C61,
+            BATTLE_WILD_FLAG = 4,
+            BATTLE_TRAINER_FLAG = 7,
+            BATTLE_SAFARI_FLAG = 128,
             OPPONENT_PARTY_COUNT = 0x02023C3C,
         },
         EUR_USA = {
@@ -29,6 +38,9 @@ return {
             PARTY_START = 0x03004360,
             ENEMY_START = 0x030045C0,
             BATTLE_MODE = 0x02023C61,
+            BATTLE_WILD_FLAG = 4,
+            BATTLE_TRAINER_FLAG = 7,
+            BATTLE_SAFARI_FLAG = 128,
             OPPONENT_PARTY_COUNT = 0x02023C3C,
         }
     },
@@ -38,6 +50,9 @@ return {
             PARTY_START = 0x02024190,
             ENEMY_START = 0x020243E8,
             BATTLE_MODE = 0x02022D13,
+            BATTLE_WILD_FLAG = 4,
+            BATTLE_TRAINER_FLAG = 7,
+            BATTLE_SAFARI_FLAG = 128,
             OPPONENT_PARTY_COUNT = 0x0202475E,
         },
         EUR_USA = {
@@ -45,6 +60,9 @@ return {
             PARTY_START = 0x020244EC,
             ENEMY_START = 0x02024744,
             BATTLE_MODE = 0x02022D13,
+            BATTLE_WILD_FLAG = 4,
+            BATTLE_TRAINER_FLAG = 7,
+            BATTLE_SAFARI_FLAG = 128,
             OPPONENT_PARTY_COUNT = 0x0202475E,
         }
     }

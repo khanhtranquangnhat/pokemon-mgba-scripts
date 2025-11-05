@@ -720,7 +720,10 @@ end
 
 local function get_yield_by_species_id(species_id)
     -- O(1) lookup instead of O(n) loop
-    return yields_cache[species_id]
+
+    current_nationalDex = nationalDexList[species_id + 1]
+    local id_str = string.format("%04d", current_nationalDex)
+    return yields_cache[id_str]
 end
 
 -- ============================================================================
@@ -837,7 +840,6 @@ function pokemon_check.full_info(report)
     end
     
     local name = (pokemon_info and pokemon_info.name) or "Unknown Pokemon"
-    gSpecies4C = string.format("%04d", tonumber(g.species) or 0)
     local nature_name = report.nature or "Unknown"
     local natureData = get_nature_stats_by_name(nature_name)
     local is_shiny = report.is_shiny or false
@@ -863,7 +865,7 @@ function pokemon_check.full_info(report)
 
     -- console:log("TID should be: 36858")
 
-    local ev_yield = get_yield_by_species_id(gSpecies4C) or {}
+    local ev_yield = get_yield_by_species_id(g.species) or {}
     local ev_value = {}
     local total_ev = ev_yield.value or 0
     -- loop to ev_yield to get item has 1
@@ -1027,12 +1029,8 @@ function pokemon_check.print_report(report, buffer, opts)
             buffer:print("Immunities with: " .. table.concat(report.immunities or {}, ", ") .. "\n")
             buffer:print("-----------------------------------\n")
             buffer:print("Abilities:\n")
-            local ability_number = 1;
-            local ability_index = report.ability_index or 0
-            for _, ability in ipairs(report.ability_effects or {}) do
-                buffer:print(string.format("%d. %s: %s\n", ability_number, ability.name or "Unknown", ability.description or "No description"))
-                ability_number = ability_number + 1
-            end
+            local ability = report.ability_effects[report.ability_index + 1] or {name="Unknown", desc="No description"}
+            buffer:print(string.format("  %s: %s\n", ability.name or "Unknown", ability.desc or "No description"))
             buffer:print("-----------------------------------\n")
             buffer:print(string.format("Hidden Power Type: %s (Power: %d)\n", report.hidden_type, report.hidden_power_power))
             buffer:print("-----------------------------------\n")

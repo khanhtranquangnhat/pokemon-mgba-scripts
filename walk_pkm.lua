@@ -42,11 +42,11 @@ local function detect_wild_battle()
     end
 
     if prev_mode ~= mode then
-        if prev_mode ~= 4 and mode == 4 then
+        if prev_mode ~= MEMORY.BATTLE_WILD_FLAG and mode == MEMORY.BATTLE_WILD_FLAG then
             local hash = ""
             local reports = {}
             -- for i = 1, 6 do
-                local success, report = check_pokemon.check_pokemon_at(MEMORY.ENEMY_START, "Wild", { show_moves = true })
+                local success, report = check_pokemon.check_pokemon_at(MEMORY.ENEMY_START, "Wild")
                 if success and report then
                     hash = hash .. (json.encode(report) or "")
                     table.insert(reports, report)
@@ -56,7 +56,7 @@ local function detect_wild_battle()
                 walk_buffer:clear()
                 walk_buffer:print("🎯 Wild battle detected!\n")
                 for _, report in ipairs(reports) do
-                    check_pokemon.print_report(report, walk_buffer)
+                    check_pokemon.print_report(report, walk_buffer, { show_moves = true })
                 end
                 prev_wild_hash = hash
             end
@@ -79,9 +79,9 @@ local function detect_trainer_battle()
         local hash = ""
         local reports = {}
         local opponent_party_count = 6
-        if read_byte(MEMORY.OPPONENT_PARTY_COUNT) > 0 then
-            opponent_party_count = read_byte(MEMORY.OPPONENT_PARTY_COUNT)
-        end
+        -- if read_byte(MEMORY.OPPONENT_PARTY_COUNT) > 0 then
+        --     opponent_party_count = read_byte(MEMORY.OPPONENT_PARTY_COUNT)
+        -- end
         -- console:log("Opponent party count: " .. tostring(opponent_party_count))
         for i = 1, opponent_party_count do
             local base_address = MEMORY.ENEMY_START + (i - 1) * 100
